@@ -1,7 +1,12 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Jekyll build files and caches
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata/
+
+# Dependencies
+vendor/
+
+# Generated CSS and JS
 assets/css/tailwind.css
 assets/js/bundle.js

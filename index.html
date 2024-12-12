@@ -5,22 +5,28 @@ title: "Про нас - Вольт Альянс"
 
 
 
-<div data-controller="scroll-animate" class="min-h-screen bg-gradient-to-b from-gray-100 via-white to-gray-50 text-gray-800">
-  
-  <!-- Hero Section -->
-  <header class="relative overflow-hidden py-24 flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 text-white mb-10">
-    <div class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-20" style="background-image: url('https://via.placeholder.com/1200x800');"></div>
-    <h1 class="text-4xl md:text-6xl font-bold z-10 mb-4 transform hover:scale-105 transition-transform duration-300">
-      Вольт Альянс
-    </h1>
-    <p class="text-lg md:text-2xl font-light z-10 max-w-2xl text-center">
-      Ваш надійний партнер в електротехнічних рішеннях
-    </p>
-    <!-- Subtle floating element -->
-    <div class="z-10 mt-6 w-12 h-12 rounded-full bg-white bg-opacity-20 flex items-center justify-center animate-bounce">
-      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8l8 8 8-8"></path>
-      </svg>
+<div data-controller="scroll-animate parallax" class="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 text-gray-800">
+
+  <!-- Hero Section with Parallax -->
+  <header class="relative overflow-hidden py-32 flex flex-col items-center justify-center text-white mb-16">
+    <!-- Parallax Background -->
+    <div data-parallax-target="background" class="absolute inset-0 bg-no-repeat bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x1080?text=Hero+Background');"></div>
+    
+    <div class="relative z-10 max-w-3xl text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 transform hover:scale-105 transition-transform duration-300">
+        Вольт Альянс
+      </h1>
+      <p class="text-lg md:text-2xl font-light max-w-2xl mx-auto">
+        Ваш надійний партнер у сфері електротехнічних рішень для сучасних проєктів.
+      </p>
+    </div>
+
+    <!-- Floating SVG decorative elements -->
+    <div class="absolute top-10 left-0 animate-pulse opacity-80">
+      <svg class="w-16 h-16 text-pink-300" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+    </div>
+    <div class="absolute top-1/2 right-0 animate-bounce opacity-80">
+      <svg class="w-12 h-12 text-purple-300" fill="currentColor" viewBox="0 0 24 24"><polygon points="12,2 22,22 2,22"/></svg>
     </div>
   </header>
 
@@ -29,8 +35,7 @@ title: "Про нас - Вольт Альянс"
     <div data-scroll-animate-target="animated" class="my-10">
       <h2 class="text-3xl font-bold text-gray-900 mb-4">Про нас</h2>
       <p class="leading-loose text-gray-700">
-        Шановні покупці!
-        В нашому Інтернет магазині ви зможете придбати всю необхідну електротехнічну продукцію, як для власних потреб, так і для комплектації великих будівельних об'єктів. Це - щитове устаткування та силові роз'єми, кабельно-провідникова продукція, низьковольтне обладнання, системи прокладки кабелю, електроінсталяція, джерела світла, силове обладнання, витратні матеріали, світлотехніка і багато іншого.
+        В компанії «Вольт Альянс» ви знайдете широкий вибір електротехнічної продукції для будь-яких потреб. Ми допоможемо вам підібрати оптимальні рішення завдяки нашому досвіду та широкому асортименту.
       </p>
     </div>
 
@@ -38,78 +43,99 @@ title: "Про нас - Вольт Альянс"
       <div>
         <h3 class="text-2xl font-semibold mb-2">Ми пропонуємо:</h3>
         <ul class="list-disc list-inside text-gray-700 leading-loose">
-          <li>якісне електротехнічне обладнання за оптимальними цінами;</li>
-          <li>зручність замовлення - Ви можете оформити заявку на товар прямо на сайті або по телефону;</li>
-          <li>індивідуальний підхід до кожного покупця;</li>
-          <li>постійна наявність товару;</li>
-          <li>широкий асортимент товарів;</li>
-          <li>філії по всій Україні;</li>
-          <li>сертифікована і високоякісна електротехніка;</li>
-          <li>своєчасне виконання замовлень і безперебійна доставка.</li>
+          <li>Якісне обладнання за доступними цінами</li>
+          <li>Персональні консультації</li>
+          <li>Швидке замовлення та оперативну доставку</li>
+          <li>Постійна наявність широкого асортименту</li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-2xl font-semibold mb-2">Переваги роботи з нами</h3>
+        <h3 class="text-2xl font-semibold mb-2">Наші можливості</h3>
         <p class="leading-loose text-gray-700">
-          Купуючи електротехнічну продукцію у нас, ви заощадите свій час і кошти, отримавши замовлення в зручному місці.
+          Ми працюємо з провідними виробниками, постачаючи сертифіковану продукцію та пропонуючи комплексні рішення для будівництва, модернізації або обслуговування електромереж.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Products Section -->
+  <!-- Long Text Section to Showcase Parallax and More Content -->
   <section class="max-w-5xl mx-auto px-4 md:px-0 mb-16">
     <div data-scroll-animate-target="animated" class="mb-10">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">Продукція</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Більше про нашу діяльність</h2>
       <p class="text-gray-700 leading-loose">
-        «Вольт Альянс» займається продажом:
+        Ми прагнемо бути не просто постачальником, а партнером, який розуміє ваші потреби. Наша команда експертів готова надати рекомендації та допомогти обрати найкраще обладнання для вашого проєкту.
+        Ми співпрацюємо з різними галузями — від житлового будівництва до промислових об’єктів, та пропонуємо рішення, що враховують енергозбереження, безпеку та довговічність.
       </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">Кабельно-провідникова продукція</h3>
-        <p class="text-gray-700 mb-3">Провідні українські та зарубіжні виробники: ЗЗЦМ, Одескабель, Интеркабель Київ, …</p>
-        <span class="inline-block py-1 px-3 bg-blue-100 text-blue-600 rounded-full text-sm">Кабель</span>
-      </div>
-
-      <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">Електротехнічне обладнання</h3>
-        <p class="text-gray-700 mb-3">Legrand, АВВ, Moeller, Eaton, Shneider, ИЭК, АСКО, Промфактор, CHINT, VIKO</p>
-        <span class="inline-block py-1 px-3 bg-green-100 text-green-600 rounded-full text-sm">Обладнання</span>
-      </div>
-
-      <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">Світлотехнічна продукція</h3>
-        <p class="text-gray-700 mb-3">Electrum, Ватра, Світові технології, Feron, LED Technologies, Optima, Delux</p>
-        <span class="inline-block py-1 px-3 bg-yellow-100 text-yellow-600 rounded-full text-sm">Освітлення</span>
-      </div>
     </div>
   </section>
 
-  <!-- Delivery & Payment -->
+  <!-- Continuous Horizontal Image Marquee -->
+  <section class="max-w-5xl mx-auto px-4 md:px-0 mb-16">
+    <div data-scroll-animate-target="animated" class="mb-10">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Наша продукція у русі</h2>
+      <p class="text-gray-700 leading-loose">Ознайомтеся з різноманіттям товарів: кабелі, низьковольтні розподільчі щити, світлотехніка та багато іншого. Потік зображень нижче рухається постійно, демонструючи масштаб нашої пропозиції.</p>
+    </div>
+
+    <div data-controller="marquee" class="overflow-hidden relative w-full h-64 border rounded-lg shadow-lg bg-white">
+      <div data-marquee-target="container" class="absolute inset-0 flex flex-nowrap" style="transform: translateX(0px);">
+        <!-- Set of images (first sequence) -->
+        <img src="https://via.placeholder.com/300x200?text=Кабелі" class="w-64 h-full object-cover flex-shrink-0" alt="Кабелі">
+        <img src="https://via.placeholder.com/300x200?text=Низьковольтні+пристрої" class="w-64 h-full object-cover flex-shrink-0" alt="Низьковольтні пристрої">
+        <img src="https://via.placeholder.com/300x200?text=Світлотехніка" class="w-64 h-full object-cover flex-shrink-0" alt="Світлотехніка">
+        <img src="https://via.placeholder.com/300x200?text=Щитове+обладнання" class="w-64 h-full object-cover flex-shrink-0" alt="Щитове обладнання">
+    
+        <!-- Duplicate the same sequence immediately after -->
+        <img src="https://via.placeholder.com/300x200?text=Кабелі" class="w-64 h-full object-cover flex-shrink-0" alt="Кабелі">
+        <img src="https://via.placeholder.com/300x200?text=Низьковольтні+пристрої" class="w-64 h-full object-cover flex-shrink-0" alt="Низьковольтні пристрої">
+        <img src="https://via.placeholder.com/300x200?text=Світлотехніка" class="w-64 h-full object-cover flex-shrink-0" alt="Світлотехніка">
+        <img src="https://via.placeholder.com/300x200?text=Щитове+обладнання" class="w-64 h-full object-cover flex-shrink-0" alt="Щитове обладнання">
+      </div>
+    </div>    
+  </section>
+
+  <!-- Fake Feedback / Testimonials -->
   <section class="bg-gray-100 py-16">
     <div class="max-w-5xl mx-auto px-4 md:px-0">
       <div data-scroll-animate-target="animated" class="mb-10">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">Доставка і оплата</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Відгуки клієнтів</h2>
         <p class="text-gray-700 leading-loose">
-          Ми піклуємося про зручність наших клієнтів, тому здійснюємо доставку замовлених товарів прямо до вас.
+          Наші клієнти — наше натхнення. Ми вдячні за довіру та позитивні відгуки, які допомагають нам ставати ще кращими.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div data-scroll-animate-target="animated">
-          <h3 class="text-2xl font-semibold mb-2 text-gray-900">Доставка по Києву</h3>
-          <p class="text-gray-700 leading-loose mb-4">
-            Мінімальна сума замовлення 300 грн. Доставка безкоштовна при сумі понад 2000 грн. Замовлення, оформлені до 17:00, доставляються наступного дня.
-          </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+          <p class="text-gray-700 italic mb-4">"Все доставили вчасно, ціни приємні, а якість продукції чудова. Дякую за консультації!"</p>
+          <div class="flex items-center space-x-3">
+            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/100" alt="Customer1">
+            <div>
+              <p class="font-semibold text-gray-900">Іван П.</p>
+              <p class="text-sm text-gray-500">м. Київ</p>
+            </div>
+          </div>
         </div>
-        <div data-scroll-animate-target="animated">
-          <h3 class="text-2xl font-semibold mb-2 text-gray-900">Доставка по Україні</h3>
-          <p class="text-gray-700 leading-loose mb-4">
-            Транспортними компаніями Нова Пошта, Делівері, Ін-Тайм, САТ, та ін. Оплата за безготівковим розрахунком або готівкою (ПРИВАТБАНК).
-          </p>
+
+        <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+          <p class="text-gray-700 italic mb-4">"Замовляв освітлення для офісу. Все працює відмінно, персонал привітний та компетентний."</p>
+          <div class="flex items-center space-x-3">
+            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/100" alt="Customer2">
+            <div>
+              <p class="font-semibold text-gray-900">Олександра М.</p>
+              <p class="text-sm text-gray-500">м. Харків</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+          <p class="text-gray-700 italic mb-4">"Партнери порадили цю компанію. Відтепер і ми їхні постійні клієнти!"</p>
+          <div class="flex items-center space-x-3">
+            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/100" alt="Customer3">
+            <div>
+              <p class="font-semibold text-gray-900">Денис С.</p>
+              <p class="text-sm text-gray-500">м. Львів</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -120,7 +146,7 @@ title: "Про нас - Вольт Альянс"
     <div data-scroll-animate-target="animated" class="mb-10">
       <h2 class="text-3xl font-bold text-gray-900 mb-4">Контакти</h2>
       <p class="text-gray-700 leading-loose">
-        В компанії «Вольт Альянс» замовлення приймаються цілодобово!<br/>
+        Замовлення приймаються цілодобово!<br/>
         Графік роботи менеджерів: Пн-Пт 09:00 - 17:00
       </p>
     </div>
@@ -139,6 +165,23 @@ title: "Про нас - Вольт Альянс"
       </button>
     </div>
   </section>
+
+  <div data-controller="back-to-top">
+    <!-- Back to Top Button -->
+    <div
+      data-back-to-top-target="button"
+      class="fixed bottom-4 right-4 z-50 hidden"
+    >
+      <button
+        class="bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-transform transform hover:scale-105"
+        data-action="click->back-to-top#scrollToTop"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>  
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-300 py-8 text-center">
