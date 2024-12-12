@@ -1,0 +1,24 @@
+{
+  "name": "volt-alliance-static",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --minify",
+    "watch:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --watch",
+    "build:js": "npx esbuild assets/js/index.js --bundle --outfile=assets/js/bundle.js --minify",
+    "watch:js": "npx esbuild assets/js/index.js --bundle --outfile=assets/js/bundle.js --watch"
+  },  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
