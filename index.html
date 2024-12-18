@@ -8,17 +8,18 @@ title: "Про нас - Вольт Альянс"
 <div data-controller="scroll-animate parallax" class="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 text-gray-800">
 
   <header class="relative overflow-hidden py-32 flex flex-col items-center justify-center text-white mb-16">
-    <div data-parallax-target="background" class="absolute inset-0 bg-no-repeat bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x1080?text=Hero+Background');"></div>
+    <div data-parallax-target="background" class="absolute inset-0 bg-no-repeat bg-cover bg-center" style="background-image: url('{{ site.baseurl }}/assets/images/hero-bg.jpg'); filter: brightness(50%);">
+    </div>
     
     <div class="relative z-10 max-w-3xl text-center px-4">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4 transform hover:scale-105 transition-transform duration-300">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 transform hover:scale-105 transition-transform duration-300 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
         Вольт Альянс
       </h1>
-      <p class="text-lg md:text-2xl font-light max-w-2xl mx-auto">
+      <p class="text-lg md:text-2xl font-medium max-w-2xl mx-auto bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
         Ваш надійний партнер у сфері електротехнічних рішень для сучасних проєктів.
       </p>
     </div>
-  </header>
+  </header>  
 
   <section class="max-w-5xl mx-auto px-4 md:px-0 mb-16">
     <div data-scroll-animate-target="animated" class="my-10">
@@ -60,21 +61,21 @@ title: "Про нас - Вольт Альянс"
 
   <section class="max-w-5xl mx-auto px-4 md:px-0 mb-16">
     <div data-scroll-animate-target="animated" class="mb-10">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">Наша продукція у русі</h2>
-      <p class="text-gray-700 leading-loose">Ознайомтеся з різноманіттям товарів: кабелі, низьковольтні розподільчі щити, світлотехніка та багато іншого. Потік зображень нижче рухається постійно, демонструючи масштаб нашої пропозиції.</p>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Наша продукція</h2>
+      <p class="text-gray-700 leading-loose">Ознайомтеся з різноманіттям товарів: кабелі, низьковольтні розподільчі щити, світлотехніка та багато іншого.</p>
     </div>
 
     <div data-controller="marquee" class="overflow-hidden relative w-full h-64 border rounded-lg shadow-lg bg-white">
       <div data-marquee-target="container" class="absolute inset-0 flex flex-nowrap" style="transform: translateX(0px);">
-        <img src="https://via.placeholder.com/300x200?text=Кабелі" class="w-64 h-full object-cover flex-shrink-0" alt="Кабелі">
-        <img src="https://via.placeholder.com/300x200?text=Низьковольтні+пристрої" class="w-64 h-full object-cover flex-shrink-0" alt="Низьковольтні пристрої">
-        <img src="https://via.placeholder.com/300x200?text=Світлотехніка" class="w-64 h-full object-cover flex-shrink-0" alt="Світлотехніка">
-        <img src="https://via.placeholder.com/300x200?text=Щитове+обладнання" class="w-64 h-full object-cover flex-shrink-0" alt="Щитове обладнання">
+        <img src="{{ site.baseurl }}/assets/images/cables.jpg" class="w-64 h-full object-cover flex-shrink-0" alt="Кабелі">
+        <img src="{{ site.baseurl }}/assets/images/low-voltage.jpg" class="w-64 h-full object-cover flex-shrink-0" alt="Низьковольтні пристрої">
+        <img src="{{ site.baseurl }}/assets/images/lighting.jpg" class="w-64 h-full object-cover flex-shrink-0" alt="Світлотехніка">
+        <img src="{{ site.baseurl }}/assets/images/switchgear.jpg" class="w-64 h-full object-cover flex-shrink-0" alt="Щитове обладнання">        
 
-        <img src="https://via.placeholder.com/300x200?text=Кабелі" class="w-64 h-full object-cover flex-shrink-0" alt="Кабелі">
-        <img src="https://via.placeholder.com/300x200?text=Низьковольтні+пристрої" class="w-64 h-full object-cover flex-shrink-0" alt="Низьковольтні пристрої">
-        <img src="https://via.placeholder.com/300x200?text=Світлотехніка" class="w-64 h-full object-cover flex-shrink-0" alt="Світлотехніка">
-        <img src="https://via.placeholder.com/300x200?text=Щитове+обладнання" class="w-64 h-full object-cover flex-shrink-0" alt="Щитове обладнання">
+        <img src="{{ site.baseurl }}/assets/images/cables.jpg" class="w-64 h-full object-cover flex-shrink-0" alt="Кабелі">
+        <img src="{{ site.baseurl }}/assets/images/low-voltage.jpg" class="w-64 h-full object-cover flex-shrink-0" alt="Низьковольтні пристрої">
+        <img src="{{ site.baseurl }}/assets/images/lighting.jpg" class="w-64 h-full object-cover flex-shrink-0" alt="Світлотехніка">
+        <img src="{{ site.baseurl }}/assets/images/switchgear.jpg" class="w-64 h-full object-cover flex-shrink-0" alt="Щитове обладнання">        
       </div>
     </div>    
   </section>
@@ -92,7 +93,7 @@ title: "Про нас - Вольт Альянс"
         <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <p class="text-gray-700 italic mb-4">"Все доставили вчасно, ціни приємні, а якість продукції чудова. Дякую за консультації!"</p>
           <div class="flex items-center space-x-3">
-            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/100" alt="Customer1">
+            <img class="w-10 h-10 rounded-full" src="{{ site.baseurl }}/assets/images/customer1.jpg" alt="Іван П.">
             <div>
               <p class="font-semibold text-gray-900">Іван П.</p>
               <p class="text-sm text-gray-500">м. Київ</p>
@@ -103,7 +104,7 @@ title: "Про нас - Вольт Альянс"
         <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <p class="text-gray-700 italic mb-4">"Замовляв освітлення для офісу. Все працює відмінно, персонал привітний та компетентний."</p>
           <div class="flex items-center space-x-3">
-            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/100" alt="Customer2">
+            <img class="w-10 h-10 rounded-full" src="{{ site.baseurl }}/assets/images/customer2.jpg" alt="Олександр М.">
             <div>
               <p class="font-semibold text-gray-900">Олександр М.</p>
               <p class="text-sm text-gray-500">м. Харків</p>
@@ -114,7 +115,7 @@ title: "Про нас - Вольт Альянс"
         <div data-scroll-animate-target="animated" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <p class="text-gray-700 italic mb-4">"Партнери порадили цю компанію. Відтепер і ми їхні постійні клієнти!"</p>
           <div class="flex items-center space-x-3">
-            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/100" alt="Customer3">
+            <img class="w-10 h-10 rounded-full" src="{{ site.baseurl }}/assets/images/customer3.jpg" alt="Денис С.">
             <div>
               <p class="font-semibold text-gray-900">Денис С.</p>
               <p class="text-sm text-gray-500">м. Львів</p>
