@@ -127,6 +127,59 @@ title: "Про нас - Вольт Альянс"
   </section>
 
   <section class="max-w-5xl mx-auto px-4 md:px-0 py-16">
+    <div class="mb-10">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Часті запитання (FAQ)</h2>
+      <p class="text-gray-700 leading-loose">
+        Тут ви знайдете відповіді на найпоширеніші запитання про нашу компанію та послуги.
+      </p>
+    </div>
+  
+    <div data-controller="faq" class="space-y-6">
+      <div class="border-b">
+        <button data-action="click->faq#toggle" class="w-full text-left text-lg font-semibold py-4 flex justify-between items-center">
+          <span>Які послуги ви надаєте?</span>
+          <span data-faq-target="icon" class="transform transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </button>
+        <div data-faq-target="content" class="overflow-hidden transition-all duration-500 max-h-0 text-gray-700 leading-loose">
+          Ми пропонуємо широкий асортимент електротехнічної продукції, включаючи кабелі, низьковольтні пристрої, світлотехніку та щитове обладнання.
+        </div>
+      </div>
+  
+      <div class="border-b">
+        <button data-action="click->faq#toggle" class="w-full text-left text-lg font-semibold py-4 flex justify-between items-center">
+          <span>Як оформити замовлення?</span>
+          <span data-faq-target="icon" class="transform transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </button>
+        <div data-faq-target="content" class="overflow-hidden transition-all duration-500 max-h-0 text-gray-700 leading-loose">
+          Ви можете оформити замовлення через наш сайт, по телефону або написавши нам на електронну пошту.
+        </div>
+      </div>
+  
+      <div class="border-b">
+        <button data-action="click->faq#toggle" class="w-full text-left text-lg font-semibold py-4 flex justify-between items-center">
+          <span>Чи є у вас доставка?</span>
+          <span data-faq-target="icon" class="transform transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </button>
+        <div data-faq-target="content" class="overflow-hidden transition-all duration-500 max-h-0 text-gray-700 leading-loose">
+          Так, ми забезпечуємо швидку та надійну доставку по всій Україні.
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class="max-w-5xl mx-auto px-4 md:px-0 py-16">
     <div data-scroll-animate-target="animated" class="mb-10">
       <h2 class="text-3xl font-bold text-gray-900 mb-4">Контакти</h2>
       <p class="text-gray-700 leading-loose">
